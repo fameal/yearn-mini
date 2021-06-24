@@ -47,3 +47,7 @@ button {
   width: 80px;
   padding: 2px;
 }
+
+a, a:visited {
+  color: white;
+}
