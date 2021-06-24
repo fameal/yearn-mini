@@ -12,8 +12,8 @@
     // OR
     const infuraProjectId = ''; // Your Infura Project ID
 
-    const alchemyUrl = 'https://eth-mainnet.alchemyapi.io/v2/' + alchemyKey;
-    const infuraUrl = 'https://mainnet.infura.io/v3/' + infuraProjectId;
+    const alchemyUrl = alchemyKey != ''?('https://eth-mainnet.alchemyapi.io/v2/' + alchemyKey):null;
+    const infuraUrl = infuraProjectId != ''?('https://mainnet.infura.io/v3/' + infuraProjectId):null;
 
     const web3 = new Web3(alchemyUrl || infuraUrl || Web3.givenProvider);
     
